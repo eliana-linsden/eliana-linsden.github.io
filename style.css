@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Nunito Regular';
+    font-style: normal ;
+    font-weight: 400px;
+    src: url('/01_typographies/Nunito/Nunito-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nunito Black Italic';
+    src: url('/01_typographies/Nunito/Nunito-BlackItalic.ttf') format('truetype')
+}
+
+/* ______________SEPARER L'ECRAN EN DEUX____________________ */
+body, html {
+    font-family: 'Nunito Regular';
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+  /*.container {
+    display: flex;
+    height: 100%;
+  }*/
+.gauche {
+    width: 16%; /* Ajustez la largeur selon vos besoins */
+    overflow: hidden; /* Empêche le contenu débordant de scroller */
+    position: fixed; /* Rend la partie gauche fixe */
+    height: 100%;
+    border-right: 3px solid black;
+    background: #ffffff;
+}
+.droite {
+    width: 84%; /* Ajustez la largeur selon vos besoins */
+    margin-left: 16%; /* Décale la partie droite pour ne pas être cachée par la partie gauche */
+    background-color: #f3f3f3; /* Couleur de fond de la partie droite */
+    overflow-y: auto; /* Permet le défilement vertical si nécessaire */
+    height: 100%;
+}
+
+/* ______________COTE GAUCHE____________________ */
+.rectangle a {
+    text-decoration: none;
+    color: black;
+}
+.logo-site-titre {
+    font-size: xx-large;
+    font-style: normal;
+    letter-spacing: 3px;
+
+}
+.logo-site-sous-titre {
+    font-size: xx-small;
+    font-style: normal;
+    letter-spacing: 4px;
+    margin: 0;
+}
+h1 {
+    margin: 0%;
+    text-align: center;
+}
+.rectangle {
+    padding: 10%;
+    height: 90%;
+}
+ul {
+    list-style-type: circle;
+    letter-spacing: 1px;
+    line-height: 5em;
+    padding: 1.5em;
+}
+/* ______________LISTE DE PROJETS____________________ */
+.container {
+    flex-direction: column; /* Aligne les blocs verticalement */
+    align-items: flex-start; /* Aligne les blocs à gauche */
+}
+.bloc {
+    /* ne pas forcer la hauteur */
+    width: 100%; /* Largeur des blocs */
+    border-bottom: 1px solid black;
+}
+.anim01 {
+    background-color: #76818ea7;
+    background-image: url(/03_couvertures/spirale.gif);
+    background-repeat: no-repeat;
+    background-position: -64px 0;
+}
+.anim01 a {
+    padding: 82px;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Nunito Black Italic';
+    text-align: center;
+}
+.anim01 a:hover {
+    background: #ffffffb7 url(/03_couvertures/spirale.gif) repeat 0 0;
+}
+
+.anim02 {
+    background-color: #f4b69cae; /* Couleur de fond des blocs */
+    background-image: url(/03_couvertures/spirale.gif);
+    background-repeat: no-repeat;
+    background-position: -64px 0;
+}
+.anim02 a {
+    padding: 82px;
+    display: block;
+    text-decoration: none;
+    color: #45050C;
+    font-family: 'Nunito Black Italic';
+    text-align: center;
+}
+.anim02 a:hover {
+    background: #ffffffb7 url(/03_couvertures/spirale.gif) repeat 0 0;
+}
+
+.anim03 {
+    background-color: #ce4257a2; /* Couleur de fond des blocs */
+    background-image: url(/03_couvertures/baton.gif);
+    background-repeat: no-repeat;
+    background-position: -1000px 0;
+}
+.anim03 a {
+    padding: 82px;
+    display: block;
+    text-decoration: none;
+    color: #45050C;
+    font-family: 'Nunito Black Italic';
+    text-align: center;
+}
+.anim03 a:hover {
+    background: #76818E url(/03_couvertures/baton.gif) repeat 0 0;
+}
+
+/* ______________PRESENTATION DE PROJETS____________________ */
+img {
+    max-width: 60%;
+    display: block;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 10px;
+}
+.texte {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    padding: 10px;
+}
+.texte p {
+    text-align: left;
+    padding: 30px;
+}
